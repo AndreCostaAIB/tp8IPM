@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_home.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Notícias Covid-19</title>
+</head>
+<body>
+    <div class="content">
+        <header class="app-header">
+            <div class="containerv3f">
+                <h2 class="titulo">Covid-19</h2>
+            </div>
+        </header>
+
+        <div class="subheader container">
+            <div class="sub_item" onclick="go_to_destaques()">
+              <h4> Destaques </h4>
+            </div>
+            <div class="sub_item" onclick="go_to_ultimas()">
+              <h4> Últimas </h4>
+            </div>
+        </div>
+
+        <div class="grid container">
+          
+            <div class="item" id="not1" onclick="goto_noticia(1)">
+                <h3>Costa fala sobre pandemia</h3>
+                <img src="images/noticias/noticia1.jpeg" alt="" />
+
+                <img src="images/certified.png" alt="" id="certified" class ="popup" onmouseover="certHover(1)" onmouseout="certNotHover(1)" onclick="cert()">
+                <span class="popuptext" id="myPopup">Esta fonte é fidedigna!</span>
+            </div>
+
+            <div class="item" id="not2" onclick="goto_noticia(2)">
+                <h3>Portugal ultrapassa os 22 mil casos e os 800 mortos por Covid-19</h3>
+                <img src="images/noticias/noticia2.jpeg" alt="" />
+                
+                <img src="images/certified.png" alt="" id="certified" class ="popup" onmouseover="certHover(2)" onmouseout="certNotHover(2)" onclick="cert()">
+                <span class="popuptext" id="myPopup">Esta fonte é fidedigna!</span>
+            </div>
+
+            <div class="item" id="not3" onclick="goto_noticia(3)">
+                <h3>Covid-19 à volta do mundo</h3>
+                <img src="images/noticias/noticia3.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <footer class="app-footer">
+        <ul>
+            <li class="current">
+                <i id="home" class="fas fa-home"></i>
+            </li>
+            <li class="notCurrent">
+                <i id="saved" class="fas fa-folder"></i>
+            </li>
+            <li class="notCurrent">
+                <i id="notifications" class="fas fa-bell"></i>
+            </li>
+            <li class="notCurrent">
+                <i id="filter" class="fas fa-filter"></i>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+
+<script src="behaviourNovo.js"></script>
+
+</html>
